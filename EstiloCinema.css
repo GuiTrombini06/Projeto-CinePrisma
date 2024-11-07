@@ -1,0 +1,77 @@
+body{
+    background-color: #1C1C1C;
+}
+h1{
+    color:#f56c42;
+    text-align: center;
+    font-size: 50px;
+}
+
+.topo{
+    width:100%;
+    height:10vh;
+    background-color: lightblue;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    overflow: hidden;
+    
+    border-radius: 40px;
+}
+.topo h2{
+    font-size:40px;
+    color:#000000;
+}
+
+.conteiner {
+    width: 100%;
+	height: 60vh;
+	display: flex;
+    background-color: white;
+    padding: 0;
+	margin: 0;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.GrupoCartaz{ 
+     
+    width: 95%;
+	height: 55vh;
+	display: flex;
+    background-color: lime ;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+    overflow: hidden;
+    
+}
+
+.Cartaz{
+    width: 90%;
+	height: 50vh;
+	display: flex;
+    background-color: lime ;
+    justify-content: center;
+    gap:15px;
+    overflow: hidden;
+    transition: 0.5s;
+    
+}
+
+.Cartaz img{  
+	width: 90%;
+	height: 100%;
+	object-fit: cover;
+	pointer-events: none;
+    position: relative;
+    border-radius: 10px;
+}
+
+.Cartaz:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
