@@ -1,4 +1,8 @@
-
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 .conteiner1{
     background-color: aqua;
     display: flex;
@@ -146,25 +150,46 @@
 
 
   /*Pagina do Filme Forja*/
+
   .conteiner3 {
     display: flex;
-    align-items: center;
+    padding: 0;   
+    margin-top: 100px;
     justify-content: center;
-    padding: 0;
-    margin: 0;
+    align-items: center;
+
 }
 .Trailers {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%; 
-    margin-top: 90px;
+    display: block;
+    width: 600px; 
+    border: 2px solid white;
+    border-radius: 15px;
 }
 
 .Trailers video{
-    width: 500px;
-    object-fit: cover;
+
+    width: 100%; /*Coloca o video do tamanho do conteiner*/
+    height: 100%;
+    object-fit: cover; /*mantem a proporção da imagem*/
+    border-radius: 15px;
 }
 
-
+.SinopseForja{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 50px;
+    color: rgba(211, 212, 120, 0.795);
+}
+.DivTexto{
+    background-color: rgba(211, 212, 120, 0.795);
+    padding: 20px; /*Espaçamento da parte de dentro*/
+    margin: 20px auto;
+	border-radius: 10px;
+	max-width: 800px; /*Colocando uma largura Maxima*/
+}
+.DivTexto p {
+    font-size: 20px;
+    text-align: justify;
+    color: rgba(24, 23, 23, 0.808);
+}
 
