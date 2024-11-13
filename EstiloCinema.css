@@ -1,5 +1,5 @@
 
-.conteiner1Pg1{
+.ConteinerTitulo{
     
     display: flex;
     justify-content: space-between; /* Centraliza os elementos que estão dentro (horizontalmente) */
@@ -8,7 +8,7 @@
     align-items: center;
 }
 
-.Titulo {
+.CINE-PRISMA {
     
     margin-left: 5%;
     font-size: 24px;
@@ -19,7 +19,7 @@
     align-items: center; /* Centraliza os elementos que estão dentro (verticalmente) */
     
 }
-.Titulo h1{
+.CINE-PRISMA h1{
     color:rgb(189, 53, 53);
     font-size: 50px; 
 }
@@ -62,19 +62,9 @@
 }
 
 
-hr{
-    padding: 8px;
-    background-color: rgb(189, 53, 53);
-    border: solid rgb(189, 53, 53);
-    border-radius: 30px;
-}
+   /*Cartazes*/
 
-
-
-
-
-
-.conteiner2Pg1 { 
+.ConteinerCartazes { 
 	display: flex;
     padding: 0;
 	margin: 0;
@@ -87,7 +77,7 @@ hr{
 	display: flex;
     justify-content: center;
     align-items: center;
-    gap:15px;  /*Espaçamento entre os Cartazes*/
+    gap:15px; 
     overflow: hidden; /*Vai ocultar o conteúdo que ultrapassa os limites de Cartaz.*/
     position: relative;
     transition: 0.5s;
@@ -110,15 +100,15 @@ hr{
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.4);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex; 
+    align-items: center; /*centraliza o botao da certo por conta do display flex*/
+    justify-content: center; /*centraliza o botao da certo por conta do display flex*/
     opacity: 0;
     transition: opacity 0.3s ease;
     border-radius: 10px;
     text-align: center;
 
-  }
+}
 
 .Cartaz:hover .Info{
     
@@ -161,10 +151,76 @@ hr{
     transform: scale(1.1);
   }
 
+  /*Filmes*/
+
+  hr{
+    padding: 8px;
+    background-color: rgb(189, 53, 53);
+    border: solid rgb(189, 53, 53);
+    border-radius: 30px;
+}
+
+
+.ConteinerFilmes{
+
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    
+}
+.GrupoFilmes {
+    display: flex;
+    gap: 20px; /*Espaçamento entre as fotos*/
+    overflow-x: auto; /*Permite a rolagem horizontal*/
+    overflow-y: hidden; /* Oculta a rolagem vertical */
+    scroll-snap-type: x mandatory;
+        /* Define o comportamento de "snap" para a rolagem horizontal (eixo x) */
+        /* "scroll-snap-type: x" significa que o contêiner "gruda" horizontalmente nos elementos filhos durante a rolagem. 
+       "mandatory" faz o snap ser obrigatório, ou seja, ao parar a rolagem, o contêiner sempre alinhará a próxima imagem ao centro. */
+
+    scroll-behavior: smooth; /* Faz a rolagem ser suave ao navegar entre os elementos */
+    width: 95%;
+    flex-direction: row; /* Define que os elementos dentro do contêiner estarão em uma linha horizontal */
+}
+
+.GrupoFilmes img{
+
+    width: 200px;
+    height: 250px;
+    border-radius: 25px;
+
+}
+.filmes{
+    
+    scroll-snap-align: center;
+    
+    /* Alinha cada elemento ao centro do contêiner quando a rolagem "gruda" (snap) */
+    /* "scroll-snap-align: center" faz com que o item se alinhe ao centro do contêiner quando a rolagem para.
+       Isso garante que cada imagem se centralize ao parar de rolar. */
+
+    flex: none; /* Garante que cada slide tenha uma largura fixa, necessária para o efeito de rolagem */
+    width: 200px;
+    height: 250px;
+}
+
+.filmes img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+/* Oculta a barra de rolagem */
+.GrupoFilmes::-webkit-scrollbar {
+    display: none;
+}
+
 
   /*Pagina do Filme Forja*/
 
-  .conteiner3Pg2 {
+.ConteinerTrailers{
     display: flex;
     padding: 0;   
     margin-top: 100px;
