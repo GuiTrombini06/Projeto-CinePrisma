@@ -1,28 +1,26 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-.conteiner1{
-    background-color: aqua;
+
+.conteiner1Pg1{
+    
     display: flex;
-    align-items: center; /* Centraliza os elementos que estão dentro (verticalmente) */
     justify-content: space-between; /* Centraliza os elementos que estão dentro (horizontalmente) */
     overflow: hidden;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
+    align-items: center;
 }
 
 .Titulo {
+    
+    margin-left: 5%;
     font-size: 24px;
     font-weight: bold;
     flex-grow: 1;
     display: flex;
     justify-content: center;
-    background-color: white;
+    align-items: center; /* Centraliza os elementos que estão dentro (verticalmente) */
     
 }
 .Titulo h1{
-    color:#f56c42;
+    color:rgb(189, 53, 53);
     font-size: 50px; 
 }
 
@@ -37,7 +35,7 @@
     padding: 15px;
     font-size: 20px;
     border-radius: 10px;
-    background-color: red;
+    background-color: rgb(189, 53, 53);
     border: solid ;
 
 }
@@ -46,22 +44,37 @@
 .topo{
     width:100%;
     height:10vh;
-    background-color: lightblue;
+    background-color: rgb(189, 53, 53);
     display: flex;
 
     align-items: center;
     justify-content: center;
-    margin:10px;
+    
     overflow: hidden;
     
-    border-radius: 40px;
+    border-radius: 30px;
+
+    margin-bottom: 30px;
 }
 .topo h2{
     font-size:40px;
     color:#000000;
 }
 
-.conteiner2 { 
+
+hr{
+    padding: 8px;
+    background-color: rgb(189, 53, 53);
+    border: solid rgb(189, 53, 53);
+    border-radius: 30px;
+}
+
+
+
+
+
+
+.conteiner2Pg1 { 
 	display: flex;
     padding: 0;
 	margin: 0;
@@ -151,7 +164,7 @@
 
   /*Pagina do Filme Forja*/
 
-  .conteiner3 {
+  .conteiner3Pg2 {
     display: flex;
     padding: 0;   
     margin-top: 100px;
