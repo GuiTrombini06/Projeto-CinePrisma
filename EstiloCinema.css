@@ -58,7 +58,7 @@
 }
 .topo h2{
     font-size:40px;
-    color:#000000;
+    color:#ffffff;
 }
 
 
@@ -151,14 +151,31 @@
     transform: scale(1.1);
   }
 
+  /*Categoria filmes*/
+
+  .CategoriaFilmes {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50px;
+	border-radius: 35px;
+	background-color: rgb(189, 53, 53);
+    border: solid rgb(189, 53, 53);
+
+
+}
+
+.CategoriaFilmes h1 {
+	text-align: center;
+	font-size: 40px;
+	padding: 5px;
+	color: #ECF0FC;
+	font-family: 'Inter', sans-serif;
+}
+
   /*Filmes*/
 
-  hr{
-    padding: 8px;
-    background-color: rgb(189, 53, 53);
-    border: solid rgb(189, 53, 53);
-    border-radius: 30px;
-}
+
 
 
 .ConteinerFilmes{
@@ -175,22 +192,19 @@
     gap: 20px; /*Espaçamento entre as fotos*/
     overflow-x: auto; /*Permite a rolagem horizontal*/
     overflow-y: hidden; /* Oculta a rolagem vertical */
-    scroll-snap-type: x mandatory;
-        /* Define o comportamento de "snap" para a rolagem horizontal (eixo x) */
-        /* "scroll-snap-type: x" significa que o contêiner "gruda" horizontalmente nos elementos filhos durante a rolagem. 
-       "mandatory" faz o snap ser obrigatório, ou seja, ao parar a rolagem, o contêiner sempre alinhará a próxima imagem ao centro. */
-
+    scroll-snap-type: x proximity; /* Alinha com leveza durante a rolagem */
     scroll-behavior: smooth; /* Faz a rolagem ser suave ao navegar entre os elementos */
     width: 95%;
     flex-direction: row; /* Define que os elementos dentro do contêiner estarão em uma linha horizontal */
+    
 }
 
 .GrupoFilmes img{
 
     width: 200px;
-    height: 250px;
+    height: 300px;
     border-radius: 25px;
-
+    
 }
 .filmes{
     
@@ -202,7 +216,8 @@
 
     flex: none; /* Garante que cada slide tenha uma largura fixa, necessária para o efeito de rolagem */
     width: 200px;
-    height: 250px;
+    height: 300px;
+    transition: all 1s;
 }
 
 .filmes img {
@@ -212,9 +227,12 @@
     object-fit: cover;
 }
 
-/* Oculta a barra de rolagem */
+.filmes:hover{
+    opacity: 0.3;
+}
+
 .GrupoFilmes::-webkit-scrollbar {
-    display: none;
+    display: none; /* Oculta a barra de rolagem */
 }
 
 
