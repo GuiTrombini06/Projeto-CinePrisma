@@ -1,98 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 .BodyIndex{
-    font-family: 'Inter', sans-serif;
-    background-color: #1C1C1C;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.ConteinerTitulo{
-    
+html{
+    Scroll-behavior: smooth
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url("Imagens/Vingadores-Fundo.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* height: 130vh; */
+}
+
+header{
     display: flex;
-    justify-content: space-between; /* Centraliza os elementos que estão dentro (horizontalmente) */
-    overflow: hidden;
-    margin-bottom: 20px;
+    justify-content: space-between;
     align-items: center;
+    height: 10vh;
+    width: 100%;
 }
 
-.CINE-PRISMA {
-    
-    margin-left: 5%;
-    font-size: 24px;
-    font-weight: bold;
-    flex-grow: 1;
+.logo{
+    margin-left: 60px;
+    margin-right: 50px;
+}
+
+.logo img{
+    height: 7vh;
+}
+
+.logo h3{
+    color: #009688;
+    font: 35px;
+    margin-top: -35px;
+    margin-left: 60px;
+}
+
+.nav ul{
     display: flex;
-    justify-content: center;
-    align-items: center; /* Centraliza os elementos que estão dentro (verticalmente) */
-    background-color:  rgb(118, 30, 168);
-    border-radius: 50%;
-}
-.CINE-PRISMA h1{
-    color:white;
-    font-size: 50px; 
 }
 
-.formulario{
+.nav ul li{
+    list-style: none;
+}
+
+.nav ul li a{
     text-decoration: none;
-    margin-left: auto; 
+    padding: 0px 20px;
+    color:rgb(227, 238, 227)
+}
+
+.nav ul li a:hover{
+    color: #009688;
+    font-weight: bolder;
+}
+
+.user{
+    cursor: pointer;
+    color: #009688;
+    margin-top: 10px;
+    margin-right: 40px;
+}
+
+.user a {
+    text-decoration: none;
+    color:rgb(227, 238, 227);
+    background-color: #009688;
+    border-radius: 10px;
+    padding: 10px 30px;
+}
+
+.user a:hover{
+    background-color: black;
+    color: rgb(227, 238, 227);
+    font-weight: bolder;
+}
+
+.user i{
+    font-size: 20px;
+    margin-right: 10px;
+    padding: 0px 14px;
+}
+
+.formulario {
+    text-decoration: none;
+    margin-left: auto;
     margin-right: 10px;
 }
 
-.formulario button{
+.formulario button {
 
     padding: 15px;
     font-size: 20px;
     border-radius: 10px;
     background-color: rgb(189, 53, 53);
-    border: solid ;
+    border: solid;
 
 }
 
-
-.topo{
-    width:100%;
-    height:10vh;
+.topo {
+    width: 100%;
+    height: 10vh;
     background-color: rgb(189, 53, 53);
     display: flex;
 
     align-items: center;
     justify-content: center;
-    
+
     overflow: hidden;
-    
+
     border-radius: 30px;
 
     margin-bottom: 30px;
 }
-.topo h2{
-    font-size:40px;
-    color:#ffffff;
+
+.topo h2 {
+    font-size: 40px;
+    color: #ffffff;
 }
 
 
-   /*Cartazes*/
+/*Cartazes*/
 
-.ConteinerCartazes { 
-	display: flex;
+.ConteinerCartazes {
+    display: flex;
     padding: 0;
-	margin: 0;
-    justify-content: center; /* Centraliza os elementos que estão dentro (horizontalmente) */
-    align-items: center;  /* Centraliza os elementos que estão dentro (verticalmente) */
+    margin: 0;
+    justify-content: center;
+    /* Centraliza os elementos que estão dentro (horizontalmente) */
+    align-items: center;
+    /* Centraliza os elementos que estão dentro (verticalmente) */
 }
 
-.GrupoCartaz{ 
-    
-	display: flex;
+.GrupoCartaz {
+
+    display: flex;
     justify-content: center;
     align-items: center;
-    gap:15px; 
-    overflow: hidden; /*Vai ocultar o conteúdo que ultrapassa os limites de Cartaz.*/
+    gap: 15px;
+    overflow: hidden;
+    /*Vai ocultar o conteúdo que ultrapassa os limites de Cartaz.*/
     position: relative;
     transition: 0.5s;
 }
 
-.Cartaz{
+.Cartaz {
 
     position: relative;
-    width: 500px; /*Largura do Cartaz*/
-	height: 60vh; /*Altura do Cartaz*/
+    width: 400px;
+    /*Largura do Cartaz*/
+    height: 60vh;
+    /*Altura do Cartaz*/
     overflow: hidden;
     transition: 0.5s;
     border-radius: 10px;
@@ -105,9 +168,11 @@
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.4);
-    display: flex; 
-    align-items: center; /*centraliza o botao da certo por conta do display flex*/
-    justify-content: center; /*centraliza o botao da certo por conta do display flex*/
+    display: flex;
+    align-items: center;
+    /*centraliza o botao da certo por conta do display flex*/
+    justify-content: center;
+    /*centraliza o botao da certo por conta do display flex*/
     opacity: 0;
     transition: opacity 0.3s ease;
     border-radius: 10px;
@@ -115,13 +180,13 @@
 
 }
 
-.Cartaz:hover .Info{
-    
+.Cartaz:hover .Info {
+
     opacity: 1;
 
 }
 
-.Cartaz:hover img{
+.Cartaz:hover img {
 
     filter: blur(2px);
     transform: scale(1.1);
@@ -129,17 +194,17 @@
 
 }
 
-.Cartaz img{  
+.Cartaz img {
 
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	pointer-events: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
     position: relative;
     transition: 0.5s;
 }
 
-.Info button{
+.Info button {
     background-color: #ff6b6b;
     color: white;
     border: none;
@@ -154,69 +219,78 @@
 .Info button:hover {
     background-color: #ff4757;
     transform: scale(1.1);
-  }
+}
 
-  /*Categoria filmes*/
+/*Categoria filmes*/
 
-  .CategoriaFilmes {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 50px;
-	border-radius: 35px;
-	background-color: rgb(189, 53, 53);
+.CategoriaFilmes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    border-radius: 35px;
+    background-color: rgb(189, 53, 53);
     border: solid rgb(189, 53, 53);
 
 
 }
 
 .CategoriaFilmes h1 {
-	text-align: center;
-	font-size: 40px;
-	padding: 5px;
-	color: #ECF0FC;
-	font-family: 'Inter', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    padding: 5px;
+    color: #ECF0FC;
+    font-family: 'Inter', sans-serif;
 }
 
-  /*Filmes*/
+/*Filmes*/
 
-.ConteinerFilmes{
+.ConteinerFilmes {
 
     padding: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 95%;
-    
-}
-.GrupoFilmes {
-    display: flex;
-    gap: 20px; /*Espaçamento entre as fotos*/
-    overflow-x: auto; /*Permite a rolagem horizontal*/
-    overflow-y: hidden; /* Oculta a rolagem vertical */
-    scroll-snap-type: x proximity; /* Alinha com leveza durante a rolagem */
-    scroll-behavior: smooth; /* Faz a rolagem ser suave ao navegar entre os elementos */
-    width: 95%;
-    flex-direction: row; /* Define que os elementos dentro do contêiner estarão em uma linha horizontal */
-    
+
 }
 
-.GrupoFilmes img{
+.GrupoFilmes {
+    display: flex;
+    gap: 20px;
+    /*Espaçamento entre as fotos*/
+    overflow-x: auto;
+    /*Permite a rolagem horizontal*/
+    overflow-y: hidden;
+    /* Oculta a rolagem vertical */
+    scroll-snap-type: x proximity;
+    /* Alinha com leveza durante a rolagem */
+    scroll-behavior: smooth;
+    /* Faz a rolagem ser suave ao navegar entre os elementos */
+    width: 95%;
+    flex-direction: row;
+    /* Define que os elementos dentro do contêiner estarão em uma linha horizontal */
+
+}
+
+.GrupoFilmes img {
 
     width: 200px;
     height: 300px;
     border-radius: 25px;
-    
+
 }
-.filmes{
-    
+
+.filmes {
+
     scroll-snap-align: center;
-    
+
     /* Alinha cada elemento ao centro do contêiner quando a rolagem "gruda" (snap) */
     /* "scroll-snap-align: center" faz com que o item se alinhe ao centro do contêiner quando a rolagem para.
        Isso garante que cada imagem se centralize ao parar de rolar. */
 
-    flex: none; /* Garante que cada slide tenha uma largura fixa, necessária para o efeito de rolagem */
+    flex: none;
+    /* Garante que cada slide tenha uma largura fixa, necessária para o efeito de rolagem */
     width: 200px;
     height: 300px;
     transition: all 1s;
@@ -229,53 +303,61 @@
     object-fit: cover;
 }
 
-.filmes:hover{
+.filmes:hover {
     opacity: 0.3;
 }
 
 .GrupoFilmes::-webkit-scrollbar {
-    display: none; /* Oculta a barra de rolagem */
+    display: none;
+    /* Oculta a barra de rolagem */
 }
 
 
-  /*Pagina do Filme Forja*/
+/*Pagina do Filme Forja*/
 
-.ConteinerTrailers{
+.ConteinerTrailers {
     display: flex;
-    padding: 0;   
+    padding: 0;
     margin-top: 100px;
     justify-content: center;
     align-items: center;
 
 }
+
 .Trailers {
     display: block;
-    width: 600px; 
+    width: 600px;
     border: 2px solid white;
     border-radius: 15px;
 }
 
-.Trailers video{
+.Trailers video {
 
-    width: 100%; /*Coloca o video do tamanho do conteiner*/
+    width: 100%;
+    /*Coloca o video do tamanho do conteiner*/
     height: 100%;
-    object-fit: cover; /*mantem a proporção da imagem*/
+    object-fit: cover;
+    /*mantem a proporção da imagem*/
     border-radius: 15px;
 }
 
-.SinopseForja{
+.SinopseForja {
     text-align: center;
     margin-top: 50px;
     font-size: 50px;
     color: rgba(211, 212, 120, 0.795);
 }
-.DivTexto{
+
+.DivTexto {
     background-color: rgba(211, 212, 120, 0.795);
-    padding: 20px; /*Espaçamento da parte de dentro*/
+    padding: 20px;
+    /*Espaçamento da parte de dentro*/
     margin: 20px auto;
-	border-radius: 10px;
-	max-width: 800px; /*Colocando uma largura Maxima*/
+    border-radius: 10px;
+    max-width: 800px;
+    /*Colocando uma largura Maxima*/
 }
+
 .DivTexto p {
     font-size: 20px;
     text-align: justify;
