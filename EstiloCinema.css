@@ -308,13 +308,17 @@ header {
     margin-top: 60px;
 }
 
-
 .ConteinerTrailers {
     display: flex;
     padding: 0;
     margin-top: 100px;
 
 }
+
+.h1pgfilmes {
+    color: white;
+}
+
 
 /*Foto do filme*/
 .Poster {
@@ -330,7 +334,6 @@ header {
     border-radius: 20px;
     margin-left: 10px;
 }
-
 
 /*Informações do Filme*/
 .InfoFilme {
@@ -371,10 +374,10 @@ header {
 .Trailers {
     display: block;
     width: 600px;
-    border: 5px solid rgba(211, 212, 120, 0.795);
+    border: 5px solid #009688;
     border-radius: 15px;
     margin-left: auto;
-    margin-right: 50px;
+    margin-right: 40px;
 }
 
 .Trailers video {
@@ -394,14 +397,14 @@ header {
     text-align: center;
     margin-top: 50px;
     font-size: 50px;
-    color: rgba(211, 212, 120, 0.795);
+    color: #009688;
 }
 
 .DivTexto {
-    background-color: rgba(211, 212, 120, 0.795);
+    background-color: #009688;
     padding: 20px;
     /*Espaçamento da parte de dentro*/
-    margin: 20px auto;
+    margin: 50px auto;
     border-radius: 10px;
     max-width: 800px;
     /*Colocando uma largura Maxima*/
@@ -410,9 +413,35 @@ header {
 .DivTexto p {
     font-size: 20px;
     text-align: justify;
-    color: rgba(24, 23, 23, 0.808);
+    color: white;
 }
 
+/*Maps*/
+
+.TituloMaps{
+    display: flex;
+    color: #009688;
+    justify-content: center;
+    align-items: center;
+}
+
+.ConteinerMaps{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Ajuste conforme necessário */
+    width: 100%;
+}
+
+.ConteinerMaps iframe{
+    max-width: 100%; /* Adapta o tamanho do mapa ao contêiner */
+    width: 600px; /* Defina o tamanho desejado */
+    height: 300px;
+    border-radius: 8px; /* Deixa as bordas arredondadas */
+}
+
+
+/*Rodape*/
 .rodape {
     position: absolute;
     margin-top: 8px;
