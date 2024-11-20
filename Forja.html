@@ -2,36 +2,74 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
     <link rel=stylesheet href=EstiloCinema.css>
+    <link rel="icon" href="Imagens/pipoca2.png">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+        integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>A Forja</title>
 </head>
 
 <body class="BodyIndex">
 
+    <button class="ScrollTop" onclick="backTop();">
+		<i class="fa-solid fa-arrow-up"></i>
+	</button>
+    <script>
+		window.addEventListener('scroll', function () {
+			let scroll = document.querySelector('.ScrollTop')
+			scroll.classList.toggle('active', window.scrollY > 175)
+		})
+
+		function backTop() {
+			window.scrollTo({
+				top: 0,
+				behavior: 'smooth'
+			})
+		}
+	</script>
+
     <header>
-        <div class="logoPgForja">
+        <!-- Logo do CinePrisma -->
+        <div class="logo">
             <a href="index.html"><img src="Imagens/pipoca2.png" alt="Logo-Pipoca"></a>
+            <h3>CinePrisma</h3>
         </div>
 
+        <!-- Menu -->
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#Sinopse">Sinopse</a></li>
+                <li><a href="#Cinemas">Cinemas</a></li>
+            </ul>
+        </div>
+
+        <!-- Formulario -->
+        <div class="user">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-bell"></i>
+            <a href="formulario.html">Login</a>
+        </div>
     </header>
 
 
-        
-
     <div class=ConteinerTrailers>
 
-       <div class="Poster">
+        <div class="Poster">
 
             <img src="Imagens/Forja.jpeg">
-            
-       </div> 
-       
-       <div class="InfoFilme">
-            
+
+        </div>
+
+        <div class="InfoFilme">
+
             <ul>
-                <li><h1 class="h1pgfilmes"> A Forja </h1></li>
+                <li>
+                    <h1 class="h1pgfilmes"> A Forja </h1>
+                </li>
                 <li><strong>Ano:</strong> <span>2024</span></li>
                 <li><strong>País:</strong> <span>Brasil</span></li>
                 <li><strong>Gêneros:</strong> <span>Drama, Família</span></li>
@@ -43,14 +81,13 @@
         </div>
 
         <div class="Trailers">
-            <video src="Videos/Trailer Forja.mp4" 
-            controls poster="Imagens/PosterForja.jpeg">
+            <video src="Videos/Trailer Forja.mp4" controls poster="Imagens/PosterForja.jpeg">
                 Seu Navegador não suporta a TAG video
             </video>
         </div>
     </div>
 
-    <h1 class="SinopseForja">Sinopse</h1>
+    <h1 class="SinopseForja" id="Sinopse">Sinopse</h1>
 
     <div class="DivTexto">
 
@@ -67,11 +104,14 @@
     </div>
 
 
-        <h1 class="TituloMaps">Cinemas Perto de Você</h1>
+    <h1 class="TituloMaps" id="Cinemas">Cinemas Perto de Você</h1>
     <div class="ConteinerMaps">
-        
-        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d28821.7778518933!2d-49.286348819135824!3d-25.44754842201204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scinema%20perto%20de%20voc%C3%AA!5e0!3m2!1spt-BR!2sbr!4v1732131888258!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-       
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d28821.7778518933!2d-49.286348819135824!3d-25.44754842201204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scinema%20perto%20de%20voc%C3%AA!5e0!3m2!1spt-BR!2sbr!4v1732131888258!5m2!1spt-BR!2sbr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
     </div>
 
     <div class="rodape">
@@ -82,11 +122,13 @@
                     <img src="Imagens/pipoca2.png" alt="Logo-Pipoca">
                 </div>
                 <div class="copyright">
-                    <p>Copyright &copy, Todos os direitos reservados-2024. <br> <span>Guilherme Trombini e Lucas das Neves.</span></p>
+                    <p>Copyright &copy, Todos os direitos reservados-2024. <br> <span>Guilherme Trombini e Lucas das
+                            Neves.</span></p>
                 </div>
                 <div class="social">
                     <a href="https://github.com/GuiTrombini06"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/guilherme-trombini-de-castro-92ba80336/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/guilherme-trombini-de-castro-92ba80336/"><i
+                            class="fa-brands fa-linkedin"></i></a>
                     <a href="https://github.com/LucasNevesV1"><i class="fa-brands fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/lucasnevesv1/"><i class="fa-brands fa-linkedin"></i></a>
                 </div>

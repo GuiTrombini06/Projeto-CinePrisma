@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
+
+/* Pagina inicial */
+
 ::-webkit-scrollbar{
     width: 10px;
     background-color: #4b4b4b;
@@ -9,6 +12,44 @@
 ::-webkit-scrollbar-thumb{
     background-color: #009688;
     border-radius: 50px;
+}
+
+.ScrollTop{
+	outline: none;
+	border: 0;
+	background-color: white;
+	width: 30px;
+	height: 30px;
+	padding: 8px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	box-shadow: 0 1px 6px 2px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	z-index: 999;
+	cursor: pointer;
+	opacity: 0;
+	visibility: hidden;
+	transition: all .4s ease;
+}
+
+.ScrollTop.active{
+	opacity: 1;
+	visibility: visible;
+}
+
+.ScrollTop a:link {
+	text-decoration: none;
+	color: #080F0F;
+	
+}
+
+.ScrollTop a:visited {
+	text-decoration: none;
+	color: #080F0F;
 }
 
 html {
@@ -298,20 +339,12 @@ header {
 /*Pagina do Filme Forja*/
 
 /*Logo que volta para a pagina principal*/
-.logoPgForja {
-    margin-left: 60px;
-    margin-right: 60px;
-}
-
-.logoPgForja img {
-    height: 9vh;
-    margin-top: 60px;
-}
 
 .ConteinerTrailers {
     display: flex;
     padding: 0;
     margin-top: 100px;
+    margin-right: 40px;
 
 }
 
@@ -322,6 +355,7 @@ header {
 
 /*Foto do filme*/
 .Poster {
+    margin-left: 75px;
     width: 250px;
     height: 350px;
 
@@ -332,7 +366,6 @@ header {
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
-    margin-left: 10px;
 }
 
 /*Informações do Filme*/
@@ -366,7 +399,7 @@ header {
 }
 
 .InfoFilme span {
-    color: #c7b72d;
+    color: #009688;
     /* Cor para as informações */
 }
 
@@ -406,7 +439,7 @@ header {
     /*Espaçamento da parte de dentro*/
     margin: 50px auto;
     border-radius: 10px;
-    max-width: 800px;
+    max-width: 1200px;
     /*Colocando uma largura Maxima*/
 }
 
@@ -431,12 +464,13 @@ header {
     align-items: center;
     margin-top: 20px; /* Ajuste conforme necessário */
     width: 100%;
+    margin-bottom: 150px;
 }
 
 .ConteinerMaps iframe{
     max-width: 100%; /* Adapta o tamanho do mapa ao contêiner */
-    width: 600px; /* Defina o tamanho desejado */
-    height: 300px;
+    width: 1000px; /* Defina o tamanho desejado */
+    height: 500px;
     border-radius: 8px; /* Deixa as bordas arredondadas */
 }
 
@@ -444,7 +478,7 @@ header {
 /*Rodape*/
 .rodape {
     position: absolute;
-    margin-top: 8px;
+    margin-top: -5px;
     height: 20vh;
     color: #ffffff;
     background-color: #141414;
@@ -497,3 +531,4 @@ header {
 .copyright span {
     color: #009688;
 }
+

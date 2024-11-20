@@ -14,10 +14,27 @@
 
 <body class="BodyIndex">
 
+    <button class="ScrollTop" onclick="backTop();">
+		<i class="fa-solid fa-arrow-up"></i>
+	</button>
+    <script>
+		window.addEventListener('scroll', function () {
+			let scroll = document.querySelector('.ScrollTop')
+			scroll.classList.toggle('active', window.scrollY > 175)
+		})
+
+		function backTop() {
+			window.scrollTo({
+				top: 0,
+				behavior: 'smooth'
+			})
+		}
+	</script>
+
     <header>
         <!-- Logo do CinePrisma -->
         <div class="logo">
-            <img src="Imagens/pipoca2.png" alt="Logo-Pipoca">
+            <a href="index.html"><img src="Imagens/pipoca2.png" alt="Logo-Pipoca"></a>
             <h3>CinePrisma</h3>
         </div>
 
