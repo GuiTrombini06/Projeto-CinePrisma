@@ -1,69 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-.BodyIndex{
-    font-family: 'Montserrat', sans-serif;
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: #4b4b4b;
 }
 
-html{
+::-webkit-scrollbar-thumb{
+    background-color: #009688;
+    border-radius: 50px;
+}
+
+html {
     Scroll-behavior: smooth
 }
 
-.BodyIndex{
-    background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url("Imagens/Vingadores-Fundo.jpg");
+.BodyIndex {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("Imagens/Vingadores-Fundo.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    /* height: 130vh; */
+    font-family: 'Montserrat', sans-serif;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 10vh;
     width: 100%;
+    margin-bottom: 30px;
 }
 
-.logo{
-    margin-left: 60px;
-    margin-right: 50px;
+.logo {
+    margin-left: 42px;
 }
 
-.logo img{
-    height: 7vh;
+.logo img {
+    height: 8vh;
 }
 
-.logo h3{
+.logo h3 {
     color: #009688;
     font-size: 25px;
-    margin-top: -35px;
+    margin-top: -40px;
     margin-left: 60px;
 }
 
-.nav ul{
+.nav ul {
     display: flex;
-    
+    align-items: center;
 }
 
-
-.nav ul li{
+.nav ul li {
     list-style: none;
-    
 }
 
-.nav ul li a{
+.nav ul li a {
     text-decoration: none;
     padding: 0px 20px;
-    color:rgb(227, 238, 227)
+    color: rgb(227, 238, 227);
 }
 
-.nav ul li a:hover{
+.nav ul li a:hover {
     color: #009688;
     font-weight: bolder;
 }
 
-.user{
+.user {
     cursor: pointer;
     color: #009688;
     margin-top: 10px;
@@ -72,27 +76,27 @@ header{
 
 .user a {
     text-decoration: none;
-    color:rgb(227, 238, 227);
+    color: rgb(227, 238, 227);
     background-color: #009688;
     border-radius: 10px;
     padding: 10px 30px;
 }
 
-.user a:hover{
+.user a:hover {
     background-color: black;
     color: rgb(227, 238, 227);
     font-weight: bolder;
 }
 
-.user i{
+.user i {
     font-size: 20px;
     margin-right: 10px;
     padding: 0px 14px;
 }
 
-.Cartaz-Class{
+.Cartaz-Class {
     width: 100%;
-    height: 10vh;
+    height: 8vh;
     background-color: #009688;
     display: flex;
 
@@ -101,13 +105,13 @@ header{
 
     overflow: hidden;
 
-    border-radius: 30px;
+    border-radius: 5px;
 
-    margin-bottom: 30px;
+    margin-bottom: 45px;
 }
 
 .Cartaz-Class h2 {
-    font-size: 40px;
+    font-size: 35px;
     color: #ffffff;
 }
 
@@ -192,7 +196,7 @@ header{
 }
 
 .Info button {
-    background-color: #ff6b6b;
+    background-color: #13a99b;
     color: white;
     border: none;
     border-radius: 20px;
@@ -204,7 +208,7 @@ header{
 }
 
 .Info button:hover {
-    background-color: #ff4757;
+    background-color: #008080;
     transform: scale(1.1);
 }
 
@@ -214,20 +218,19 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50px;
-    border-radius: 35px;
+    height: 8vh;
+    border-radius: 5px;
     background-color: #009688;
-    border: solid #009688;
-
+    margin-bottom: 5px;
+    margin-top: 8px;
 
 }
 
 .CategoriaFilmes h1 {
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
     padding: 5px;
     color: #ECF0FC;
-    font-family: 'Inter', sans-serif;
 }
 
 /*Filmes*/
@@ -295,12 +298,12 @@ header{
 /*Pagina do Filme Forja*/
 
 /*Logo que volta para a pagina principal*/
-.logoPgForja{
+.logoPgForja {
     margin-left: 60px;
     margin-right: 60px;
 }
 
-.logoPgForja img{
+.logoPgForja img {
     height: 9vh;
     margin-top: 60px;
 }
@@ -310,26 +313,27 @@ header{
     display: flex;
     padding: 0;
     margin-top: 100px;
-   
+
 }
 
 /*Foto do filme*/
-.Poster{
+.Poster {
     width: 250px;
-    height: 350px ;
-    
+    height: 350px;
+
 }
-.Poster img{
+
+.Poster img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
-    margin-left:  10px; 
+    margin-left: 10px;
 }
 
 
 /*Informações do Filme*/
-.InfoFilme{
+.InfoFilme {
     margin-left: 20px;
     display: flex;
     align-items: center;
@@ -337,23 +341,30 @@ header{
 }
 
 .InfoFilme ul {
-    list-style: none; /* Remove os marcadores da lista */
-    padding: 0; /* Remove o preenchimento padrão */
-    margin: 0; /* Remove a margem padrão */
+    list-style: none;
+    /* Remove os marcadores da lista */
+    padding: 0;
+    /* Remove o preenchimento padrão */
+    margin: 0;
+    /* Remove a margem padrão */
 }
-  
+
 .InfoFilme li {
-    display: flex; /* Coloca os itens em linha */
-    margin-bottom: 15px; /* Adiciona espaçamento entre os itens */
+    display: flex;
+    /* Coloca os itens em linha */
+    margin-bottom: 15px;
+    /* Adiciona espaçamento entre os itens */
     gap: 15px;
 }
-  
+
 .InfoFilme strong {
-    color: #fff; /* Cor para os títulos */
+    color: #fff;
+    /* Cor para os títulos */
 }
-  
-.InfoFilme span{
-    color: #c7b72d; /* Cor para as informações */
+
+.InfoFilme span {
+    color: #c7b72d;
+    /* Cor para as informações */
 }
 
 /*Trailer do Filme*/
@@ -400,4 +411,60 @@ header{
     font-size: 20px;
     text-align: justify;
     color: rgba(24, 23, 23, 0.808);
+}
+
+.rodape {
+    position: absolute;
+    margin-top: 8px;
+    height: 20vh;
+    color: #ffffff;
+    background-color: #141414;
+    width: 100%;
+    left: 0;
+}
+
+.logopart img {
+    height: 10vh;
+    position: absolute;
+    top: 20px;
+    /* Ajuste conforme necessário */
+    left: 50px;
+    /* Ajuste para alinhar horizontalmente */
+}
+
+.logopart h1 {
+    color: #009688;
+    font-size: 40px;
+    margin-top: 40px;
+    margin-left: 130px;
+}
+
+.rodape-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    font-size: 15px;
+    margin-left: -55px;
+    margin-top: 25px;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+.social{
+    margin-right: 75px;
+}
+
+.social i {
+    font-size: 27px;
+    margin-top: 30px;
+    padding: 0px 4px;
+    color: #009688;
+}
+
+.copyright span {
+    color: #009688;
 }
