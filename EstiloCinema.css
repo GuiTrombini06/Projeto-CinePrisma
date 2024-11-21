@@ -294,8 +294,6 @@ header {
     /*Permite a rolagem horizontal*/
     overflow-y: hidden;
     /* Oculta a rolagem vertical */
-    scroll-snap-type: x proximity;
-    /* Alinha com leveza durante a rolagem */
     scroll-behavior: smooth;
     /* Faz a rolagem ser suave ao navegar entre os elementos */
     width: 95%;
@@ -317,6 +315,7 @@ header {
     width: 200px;
     height: 300px;
     transition: all 1s;
+    margin-bottom: 15px;
 }
 
 .filmes img {
@@ -331,9 +330,10 @@ header {
 }
 
 .GrupoFilmes::-webkit-scrollbar {
-    display: none;
-    /* Oculta a barra de rolagem */
+    height: 6px;
+    background: transparent;
 }
+
 
 
 /*Pagina do Filme Forja*/
