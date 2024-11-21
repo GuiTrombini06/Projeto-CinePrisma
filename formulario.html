@@ -2,77 +2,103 @@
 <html lang="pt-BR">
 
 <head>
+    <link rel=stylesheet href=EstiloCinema.css>
+    <link rel="icon" href="Imagens/pipoca2.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+        integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Login | Cadastro</title>
 </head>
 
-<body bgcolor="gray">
+<body class="formulariobody">
 
-    <form method=POST>
-        Nome: <input type=Text name=nome> <br>
-        Senha: <input type=password name=senha maxlength=8>
+    <div class="container">
+        <div class="form-image">
+            <img src="Imagens/undraw_home_cinema_l7yl.svg" alt="Personagem assistindo">    
+        </div>
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastre-se</h1>
+                    </div>
+                    <div class="botaoHome">
+                        <a href="index.html"><i class="fa-solid fa-right-to-bracket"></i></a>
+                    </div>
+                </div>
 
-        <br>
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Primeiro Nome</label>
+                        <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome"
+                            required>
+                    </div>
 
-        Idade: <input type=number min=18 max=110>
+                    <div class="input-box">
+                        <label for="lastname">Sobrenome</label>
+                        <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
 
-        <br>
+                    <div class="input-box">
+                        <label for="number">Celular</label>
+                        <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required maxlength="11">
+                    </div>
 
-        Sexo: <input type=radio name=sex value=M> Masc <input type=radio name=sex value=F> Fem <br>
-        Esportes Favoritos:
+                    <div class="input-box">
+                        <label for="password">Senha</label>
+                        <input id="password" type="password" name="password" minlength="8" maxlength="14"
+                            placeholder="Digite sua senha" required>
+                    </div>
 
-        <br>
 
-        <input type=checkbox value=D> Jogo de Dados
-        <input type=checkbox value=T> Jogo do Tigrinho
-        <input type=checkbox value=P> Par ou Impar
-        <input type=checkbox value=F> Futebol
+                    <div class="input-box">
+                        <label for="confirmPassword">Confirme sua Senha</label>
+                        <input id="confirmPassword" type="password" name="confirmPassword" minlength="8" maxlength="14"
+                            placeholder="Reescreva sua senha" required>
+                    </div>
 
-        <br>
+                </div>
 
-        Cor do Cabelo: <input type=color>
+                <div class="gender-inputs">
+                    <div class="gender-title">
+                        <h6>Gênero</h6>
+                    </div>
 
-        <br>
+                    <div class="gender-group">
+                        <div class="gender-input">
+                            <input id="female" type="radio" name="gender">
+                            <label for="female">Feminino</label>
+                        </div>
 
-        Data do Encontro: <input type=date>
+                        <div class="gender-input">
+                            <input id="male" type="radio" name="gender">
+                            <label for="male">Masculino</label>
+                        </div>
 
-        <br>
+                        <div class="gender-input">
+                            <input id="others" type="radio" name="gender">
+                            <label for="others">Outros</label>
+                        </div>
 
-        Nivel do Corpinho: <input type=range min=0 max=10>
+                        <div class="gender-input">
+                            <input id="none" type="radio" name="gender" checked>
+                            <label for="none">Prefiro não dizer</label>
+                        </div>
+                    </div>
+                </div>
 
-        <br>
-
-        <textarea cols=40 rows=5 readonly> Tanto Faz. </textarea>
-
-        <br>
-
-        Estado Civil:
-        <select>
-            <option value=""> Selecione...</option>
-            <option value=C> Casado</option>
-            <option value=D> Divorciado</option>
-            <option value=V> Viuvo</option>
-            <option value=S> Solteiro</option>
-            <option value=K> 0 Km</option>
-        </select>
-
-        <br>
-
-        Arquivo: <input type=file>
-
-        <br>
-
-        Email: <input type=email>
-
-        <br>
-
-        <br>
-
-        <input type=submit>
-        <input type=reset>
-
-    </form>
+                <div class="continue-button">
+                    <button><a href="#">Continuar</a> </button>
+                </div>
+            </form>
+        </div>
+    </div>
 
 </body>
 
