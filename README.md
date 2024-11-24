@@ -45,4 +45,4 @@ Aproveite o Catálogo de Filmes e boa diversão!
 
 ---
 
-**Nota:** Este é um projeto fictício criado para fins educativos e de demonstração. Os dados dos filmes são exemplos e podem não refletir informações reais.
+**Nota:** Este é um projeto fictício criado para fins educativos e de demonstração! Os dados dos filmes são exemplos e podem não refletir informações reais.
